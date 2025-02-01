@@ -7,17 +7,18 @@ PyParse is a lightweight markdown parser that sits in front of an API, allowing 
 ## Table of Contents
 
 1. [Features](#features)
-2. [Getting Started](#getting-started)
+2. [Supported Markdown](#supported-markdown-elements)
+3. [Getting Started](#getting-started)
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
    - [Running the API](#running-the-api)
-3. [Usage](#usage)
+4. [Usage](#usage)
    - [Convert Markdown to HTML](#convert-markdown-to-html)
    - [Convert Markdown to Plain Text](#convert-markdown-to-plain-text)
-4. [API Endpoints](#api-endpoints)
-5. [Examples](#examples)
-6. [Contributing](#contributing)
-7. [License](#license)
+5. [API Endpoints](#api-endpoints)
+6. [Examples](#examples)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ---
 
@@ -30,6 +31,23 @@ PyParse is a lightweight markdown parser that sits in front of an API, allowing 
 - **Curl-Friendly**: Designed for seamless interaction via `curl`.
 
 ---
+
+## Supported Markdown Elements
+
+- # Heading level 1                    <h1>Heading level 1</h1>   
+- ## Heading level 2                   <h2>Heading level 2</h2>   
+- ### Heading level 3                  <h3>Heading level 3</h3>   
+- #### Heading level 4                 <h4>Heading level 4</h4>   
+- ##### Heading level 5                <h5>Heading level 5</h5>   
+- ###### Heading level 6               <h6>Heading level 6</h6>   
+- __bold text__                        <strong>bold text</strong> 
+- **bold text**                        <strong>bold text</strong> 
+- _italic text_                        <em>italic text</em>       
+- *italic text*                        <em>italic text</em>       
+- `word`                               <code>word</code>      
+- Links                                 [Guide](https://www.google.com) Guide     
+
+-- 
 
 ## Getting Started
 
@@ -61,7 +79,7 @@ PyParse is a lightweight markdown parser that sits in front of an API, allowing 
 
 To start the PyParseAPI, run the following command:
 ```bash 
-   python app.py
+   fastapi dev app.py
 ```
 
 By default, the API will be avilable at `http://127.0.0.1:8000`
