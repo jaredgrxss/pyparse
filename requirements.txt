@@ -23,7 +23,6 @@ pydantic==2.10.6
 pydantic_core==2.27.2
 pyflakes==3.2.0
 Pygments==2.19.1
-pyparse @ file:///Users/jared/Desktop/pyparse
 python-dotenv==1.0.1
 python-multipart==0.0.20
 PyYAML==6.0.2
