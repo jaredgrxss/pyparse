@@ -1,4 +1,4 @@
-name: pyparse build and deployments
+name: pyparse
 
 on:
   push:
