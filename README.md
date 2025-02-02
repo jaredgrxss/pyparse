@@ -60,26 +60,26 @@ PyParse is a lightweight markdown parser that sits in front of an API, allowing 
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/jaredgrxss/pyparse.git
-   cd pyparse
+git clone https://github.com/jaredgrxss/pyparse.git
+cd pyparse
 ```
 
 2. Set up a virtual enviornment
 ```bash
-   python3 -m venv venv
-   source venv/bin/activate 
+python3 -m venv venv
+source venv/bin/activate 
 ```
 
 3. Install the required dependencies
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Running the API 
 
-To start the PyParseAPI, run the following command:
+To start the PyParseAPI locally, run the following command:
 ```bash 
-   fastapi dev app.py
+fastapi dev app.py
 ```
 
 By default, the API will be avilable at `http://127.0.0.1:8000`
@@ -92,9 +92,9 @@ To convert markdwon content to HTML, send a `POST` request to the `/markdown/to-
 
 Example using curl:
 ```bash
-    curl -X POST http://127.0.0.1:5000/markdown/to-html \
-    -H "Content-Type: text/plain" \
-    -d "# Hello, World!"
+curl -X POST http://127.0.0.1:5000/markdown/to-html \
+-H "Content-Type: text/plain" \
+-d "# Hello, World!"
 ```
 
 Response: 
@@ -107,9 +107,9 @@ To extract plain text from markdown content, send a `POST` request to the `/mark
 
 Example using curl:
 ```bash
-    curl -X POST http://127.0.0.1:5000/markdown/to-text \
-    -H "Content-Type: text/plain" \
-    -d "# Hello, World!"
+curl -X POST http://127.0.0.1:5000/markdown/to-text \
+-H "Content-Type: text/plain" \
+-d "# Hello, World!"
 ```
 Response:
 
@@ -126,9 +126,9 @@ Response:
 
 ### Example 1: Convert Markdown to HTML 
 ```bash
-    curl -X POST http://127.0.0.1:5000/markdown/to-html \
-    -H "Content-Type: text/plain" \
-    -d "## This is a **bold** heading"
+curl -X POST http://127.0.0.1:5000/markdown/to-html \
+-H "Content-Type: text/plain" \
+-d "## This is a **bold** heading"
 ```
 
 Response:
@@ -137,8 +137,8 @@ Response:
 ### Example 2: Convert Markdown to Plain Text
 ```bash
 curl -X POST http://127.0.0.1:5000/markdown/to-text \
-  -H "Content-Type: text/plain" \
-  -d "## This is a **bold** heading"
+-H "Content-Type: text/plain" \
+-d "## This is a **bold** heading"
 ```
 
 Response:
